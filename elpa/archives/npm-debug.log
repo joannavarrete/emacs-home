@@ -1,0 +1,170 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'swank-js' ]
+info using npm@1.1.21
+info using node@v0.6.17
+verbose config file /home/sorack/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/lib/node_modules/npm/npmrc
+verbose cache add [ 'swank-js', null ]
+silly cache add: name, spec, args [ undefined, 'swank-js', [ 'swank-js', null ] ]
+verbose parsed url { pathname: 'swank-js', path: 'swank-js', href: 'swank-js' }
+verbose addNamed [ 'swank-js', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'swank-js', '', false ]
+verbose raw, before any munging swank-js
+verbose url resolving [ 'https://registry.npmjs.org/', './swank-js' ]
+verbose url resolved https://registry.npmjs.org/swank-js
+http GET https://registry.npmjs.org/swank-js
+http 200 https://registry.npmjs.org/swank-js
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"DB7THPX99Q6DR3KINVQHJUQCS"',
+silly get cb     date: 'Sat, 12 May 2012 01:11:29 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '15554' } ]
+silly name, range, hasData 2 [ 'swank-js', '', true ]
+silly versions [ 'swank-js', [ '0.0.1', '0.0.3' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.1b-v83.6.6.25-linux-x64-3.3.5-1-ARCH',
+verbose bin dist   { shasum: '1f5ce666bfdc49f5a715f24ee2de3db562a5d8b9',
+verbose bin dist     tarball: 'http://registry.npmjs.org/swank-js/-/swank-js-0.0.3.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/swank-js/-/swank-js-0.0.3.tgz',
+verbose addRemoteTarball   '1f5ce666bfdc49f5a715f24ee2de3db562a5d8b9' ]
+verbose fetch to /tmp/npm-1336785735186/1336785735186-0.6956409199628979/tmp.tgz
+http GET https://registry.npmjs.org/swank-js/-/swank-js-0.0.3.tgz
+http 200 https://registry.npmjs.org/swank-js/-/swank-js-0.0.3.tgz
+silly updated sha bytes 40960
+silly updated sha bytes 8281
+info shasum 1f5ce666bfdc49f5a715f24ee2de3db562a5d8b9
+info shasum /tmp/npm-1336785735186/1336785735186-0.6956409199628979/tmp.tgz
+verbose unpack /tmp/npm-1336785735186/1336785735186-0.6956409199628979/tmp.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry .package.json.un~
+silly extracting entry .README.md.un~
+silly extracting entry .swank.js.un~
+silly extracting entry client/
+silly extracting entry client/browser-tests.js
+silly extracting entry client/json2.js
+silly extracting entry client/load.js
+silly extracting entry client/stacktrace.js
+silly extracting entry client/swank-js-inject.js
+silly extracting entry client/swank-js.js
+silly extracting entry client/test.html
+silly extracting entry completion-tests.js
+silly extracting entry completion.js
+silly extracting entry config.js
+silly extracting entry History.md
+silly extracting entry LICENSE
+silly extracting entry lisp-tests.js
+silly extracting entry lisp.js
+silly extracting entry package.json
+silly extracting entry README.md
+silly extracting entry slime-js.el
+silly extracting entry swank-handler-tests.js
+silly extracting entry swank-handler.js
+silly extracting entry swank-protocol-tests.js
+silly extracting entry swank-protocol.js
+silly extracting entry swank.js
+silly extracting entry user-agent-tests.js
+silly extracting entry user-agent.js
+verbose caching /tmp/npm-1336785735186/1336785735186-0.6956409199628979/package/package.json
+verbose loadDefaults swank-js@0.0.3
+verbose from cache /tmp/npm-1336785735186/1336785735186-0.6956409199628979/package/package.json
+verbose tar.pack [ '/home/sorack/.npm/swank-js/0.0.3/package.tgz',
+verbose tar.pack   '/tmp/npm-1336785735186/1336785735186-0.6956409199628979/package' ]
+verbose tarball /home/sorack/.npm/swank-js/0.0.3/package.tgz
+verbose folder /tmp/npm-1336785735186/1336785735186-0.6956409199628979/package
+verbose unpack /home/sorack/.npm/swank-js/0.0.3/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry README.md
+silly extracting entry LICENSE
+silly extracting entry completion.js
+silly extracting entry lisp-tests.js
+silly extracting entry completion-tests.js
+silly extracting entry user-agent-tests.js
+silly extracting entry lisp.js
+silly extracting entry swank-protocol.js
+silly extracting entry swank-handler.js
+silly extracting entry swank-handler-tests.js
+silly extracting entry swank.js
+silly extracting entry config.js
+silly extracting entry user-agent.js
+silly extracting entry swank-protocol-tests.js
+silly extracting entry client/stacktrace.js
+silly extracting entry client/swank-js.js
+silly extracting entry client/browser-tests.js
+silly extracting entry client/load.js
+silly extracting entry client/swank-js-inject.js
+silly extracting entry client/json2.js
+silly extracting entry client/test.html
+silly extracting entry .swank.js.un~
+silly extracting entry slime-js.el
+silly extracting entry .README.md.un~
+silly extracting entry History.md
+silly extracting entry .package.json.un~
+verbose caching /home/sorack/.npm/swank-js/0.0.3/package/package.json
+verbose loadDefaults swank-js@0.0.3
+silly updated sha bytes 40960
+silly updated sha bytes 8229
+info shasum 17cb361eac36b35af08a537ccf22abaa69eabc36
+info shasum /home/sorack/.npm/swank-js/0.0.3/package.tgz
+verbose from cache /home/sorack/.npm/swank-js/0.0.3/package/package.json
+verbose chmod /home/sorack/.npm/swank-js/0.0.3/package.tgz 644
+verbose chown [ '/home/sorack/.npm/swank-js/0.0.3/package.tgz', 1000, 1000 ]
+silly resolved [ { name: 'swank-js',
+silly resolved     version: '0.0.3',
+silly resolved     description: 'Swank backend for Node.JS and in-browser JavaScript.',
+silly resolved     keywords: [ 'swank', 'slime', 'emacs', 'repl' ],
+silly resolved     author: { name: 'Ivan Shvedunov' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Robert Krahn' },
+silly resolved        { name: 'Irakli Gozalishvili', email: 'rfobic@gmail.com' } ],
+silly resolved     homepage: 'https://github.com/swank-js/swank-js',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/swank-js/swank-js.git',
+silly resolved        web: 'https://github.com/swank-js/swank-js' },
+silly resolved     bugs: { url: 'https://github.com/swank-js/swank-js/issues/' },
+silly resolved     main: './swank.js',
+silly resolved     bin: { 'swank-js': './swank.js' },
+silly resolved     dependencies: { 'socket.io': '>=0.8.7' },
+silly resolved     scripts: { swank: 'node ./swank.js' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'X11-style',
+silly resolved          url: 'https://raw.github.com/swank-js/swank-js/master/LICENSE' } ],
+silly resolved     _id: 'swank-js@0.0.3',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.21',
+silly resolved     _nodeVersion: 'v0.6.17',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '17cb361eac36b35af08a537ccf22abaa69eabc36' },
+silly resolved     _from: 'swank-js' } ]
+info into /usr/lib swank-js@0.0.3
+info installOne swank-js@0.0.3
+verbose from cache /home/sorack/.npm/swank-js/0.0.3/package/package.json
+info unbuild /usr/lib/node_modules/swank-js
+verbose unpack /home/sorack/.npm/swank-js/0.0.3/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+ERR! Error: EACCES, mkdir '/usr/lib/node_modules/swank-js'
+ERR! 
+ERR! Please try running this command again as root/Administrator.
+ERR! 
+ERR! System Linux 3.3.5-1-ARCH
+ERR! command "node" "/usr/bin/npm" "install" "-g" "swank-js"
+ERR! cwd /home/sorack/.emacs.d/elpa/archives
+ERR! node -v v0.6.17
+ERR! npm -v 1.1.21
+ERR! path /usr/lib/node_modules/swank-js
+ERR! fstream_path /usr/lib/node_modules/swank-js
+ERR! fstream_type Directory
+ERR! fstream_class DirWriter
+ERR! code EACCES
+ERR! message EACCES, mkdir '/usr/lib/node_modules/swank-js'
+ERR! errno {}
+ERR! fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+ERR! fstream_stack Object.oncomplete (/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:42:17)
+verbose exit [ 1, true ]
