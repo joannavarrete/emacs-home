@@ -1,18 +1,25 @@
 (add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/slime")
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 ;NO DISTRACTIONS
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+;EL-GET
+(require 'el-get)
+
 ;MACROS
 (fset 'remove-spaces
    [?\M-m ?\C-  ?\C-e ?\M-x ?r ?e ?p ?l ?a ?c ?e ?- ?r ?e ?g ?e ?x ?p return ?\\ ?s ?- ?+ return ?  return ?\M-m])
 
-;AUTO COMPLETE
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
-(ac-config-default)
+;; ;AUCTEXT 
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+(setq-default TeX-PDF-mode t)
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
 
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'slime-repl-mode))
@@ -58,9 +65,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
        ((string-equal system-type "gnu/linux")
         (mapc (lambda (fPath) (let ((process-connection-type nil)) (start-process "" nil "xdg-open" fPath)) ) myFileList) ) ) ) ) )
 
-;IFIND MODE
-(defvar workspace-dir "~/temp/guava-libraries")
-(load "~/.emacs.d/ifind-mode.el")
 
 ;SEMANTIC
 (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
@@ -80,9 +84,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 
 
 ;BUFFER MOVE, TILING, WINDOWS
-(require 'buffer-move)
-(require 'tiling)
-
 (defun cycle-windows()
   (interactive)
   "cycle the buffer of the windows in cyclic ordering"
@@ -94,7 +95,7 @@ Works in Microsoft Windows, Mac OS X, Linux."
 
 ;;; Windows related operations
 ;; Split & Resize
-(define-key global-map (kbd "C-c C-r") 'cycle-windows)
+(define-key global-map (kbd "C-c C-w") 'cycle-windows)
 (define-key global-map (kbd "C-x |") 'split-window-horizontally)
 (define-key global-map (kbd "C-x _") 'split-window-vertically)
 (define-key global-map (kbd "C-{") 'shrink-window-horizontally)
@@ -133,7 +134,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 (define-key global-map (kbd "ESC M-[ c" ) 'tiling-tile-right)
 (define-key global-map (kbd "ESC M-[ d" ) 'tiling-tile-left)
 
-(require 'recentf)
 (defun ido-recentf-open ()
   "Use `ido-completing-read' to \\[find-file] a recent file"
   (interactive)
@@ -141,8 +141,7 @@ Works in Microsoft Windows, Mac OS X, Linux."
       (message "Opening file...")
     (message "Aborting")))
  
-;; get rid of `find-file-read-only' and replace it with something
-;; more useful.
+;; get rid of `find-file-read-only' and replace it with something more useful.
 (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
  
 ;; enable recent files mode.
@@ -152,12 +151,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 (setq recentf-max-saved-items 50)
 
 (setq enable-recursive-minibuffers t)
- 
-;JABBER
-  (setq jabber-account-list
-    '(("joan.navarrete.sanchez@gmail.com" 
-       (:network-server . "talk.google.com")
-       (:connection-type . ssl))))
 
 ; INDENTATION
 (setq-default tab-width 4)
@@ -185,10 +178,11 @@ Works in Microsoft Windows, Mac OS X, Linux."
 
 (add-hook 'find-file-hooks 'read-only-if-symlink)
 
-;; ;SLIME
-(setq inferior-lisp-program "/usr/bin/clisp") ; your Lisp system
+;SLIME
+(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
+;(setq inferior-lisp-program "/usr/bin/ccl64") ; your Lisp system
 (require 'slime)
-(slime-setup)
+(slime-setup '(slime-fancy)) ; 
 
 ;PACKAGES
 (require 'package)
@@ -196,9 +190,7 @@ Works in Microsoft Windows, Mac OS X, Linux."
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; ;CLOJURE
-(require 'clojure-mode)
-(require 'clojure-test-mode)
+;CLOJURE
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
