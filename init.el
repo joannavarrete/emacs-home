@@ -13,12 +13,23 @@
 
 (require 'auto-complete)
 (global-auto-complete-mode t)
+(add-to-list 'ac-modes 'latex-mode)
 
 (color-theme-solarized-dark)
 
+(defun turn-on-paredit () (paredit-mode 1))
+
+(add-hook 'prog-mode-hook (lambda ()
+                       (auto-complete-mode)
+                       (rainbow-mode)
+                       (rainbow-delimiters-mode)))
+
 ;PYTHON
-(add-hook 'python-mode-hook 'jedi:setup)
-(add-hook 'python-mode-hook 'auto-complete-mode)
+(add-hook 'python-mode-hook (lambda () 
+                              (jedi:setup)
+                              (autopair-mode)))
+
+;JEDI
 (setq jedi:setup-keys t)
 
 ;MACROS
@@ -30,9 +41,17 @@
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 
-;SLIME-AUTOCOMPLETE
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
+;SLIME
+(add-hook 'slime-mode-hook (lambda ()
+                             (set-up-slime-ac)
+                             (turn-on-paredit)))
+
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+
+(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
+;(setq inferior-lisp-program "/usr/bin/ccl64") ; your Lisp system
+(require 'slime)
+(slime-setup '(slime-fancy)) ; 
 
 ;SELECTION
 (setq x-select-enable-clipboard t)
@@ -184,12 +203,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 
 (add-hook 'find-file-hooks 'read-only-if-symlink)
 
-;SLIME
-(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
-;(setq inferior-lisp-program "/usr/bin/ccl64") ; your Lisp system
-(require 'slime)
-(slime-setup '(slime-fancy)) ; 
-
 ;PACKAGES
 (require 'package)
 (add-to-list 'package-archives
@@ -197,7 +210,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 (package-initialize)
 
 ;CLOJURE
-(defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 ;Hiding the splash screen and banner
