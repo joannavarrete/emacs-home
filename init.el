@@ -57,6 +57,11 @@
 (setq x-select-enable-clipboard t)
 (delete-selection-mode 1)
 
+;MARKDOWN
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (flyspell-mode)))
+
 ;DIRED
 ;same buffer
 (add-hook 'dired-mode-hook
@@ -117,6 +122,26 @@ Works in Microsoft Windows, Mac OS X, Linux."
                     (progn 
                       (set-window-buffer (next-window window 0) (window-buffer window))
                       (set-window-buffer window next-window-buffer)))) (butlast (window-list nil 0))))
+
+(defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
+
+(define-key my-keys-minor-mode-map (kbd "C-c C-w") 'cycle-windows)
+
+(define-minor-mode my-keys-minor-mode
+       "My mode to overwrite keys"
+      :init-value nil
+      ;; The indicator for the mode line.
+      :lighter "My-Keys"
+      ;; The minor mode bindings.
+      :keymap my-keys-minor-mode-map
+      :group 'mine)
+
+(my-keys-minor-mode 1)
+
+(defun my-minibuffer-setup-hook ()
+  (my-keys-minor-mode 0))
+
+(add-hook 'minibuffer-setup-hook 'my-minibuffer-setup-hook)
 
 ;;; Windows related operations
 ;; Split & Resize
