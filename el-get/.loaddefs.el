@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (set-up-slime-ac) "ac-slime/ac-slime" "ac-slime/ac-slime.el"
-;;;;;;  (20803 39423))
+;;;;;;  (20803 42220))
 ;;; Generated autoloads from ac-slime/ac-slime.el
 
 (defface ac-slime-menu-face '((t (:inherit ac-candidate-face))) "\
@@ -28,7 +28,7 @@ front of `ac-sources' for the current buffer.
 ;;;***
 
 ;;;### (autoloads (turn-on-bib-cite bib-cite-minor-mode) "auctex/bib-cite"
-;;;;;;  "auctex/bib-cite.el" (18341 54637))
+;;;;;;  "auctex/bib-cite.el" (20803 42189))
 ;;; Generated autoloads from auctex/bib-cite.el
 
 (autoload 'bib-cite-minor-mode "auctex/bib-cite" "\
@@ -47,7 +47,7 @@ Unconditionally turn on Bib Cite mode.
 ;;;***
 
 ;;;### (autoloads (context-mode) "auctex/context" "auctex/context.el"
-;;;;;;  (20669 44509))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/context.el
 
 (defalias 'ConTeXt-mode 'context-mode)
@@ -67,7 +67,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (context-en-mode) "auctex/context-en" "auctex/context-en.el"
-;;;;;;  (19618 16518))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/context-en.el
 
 (autoload 'context-en-mode "auctex/context-en" "\
@@ -85,7 +85,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (context-nl-mode) "auctex/context-nl" "auctex/context-nl.el"
-;;;;;;  (19618 16529))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/context-nl.el
 
 (autoload 'context-nl-mode "auctex/context-nl" "\
@@ -103,7 +103,7 @@ of context-mode-hook.
 ;;;***
 
 ;;;### (autoloads (font-latex-setup) "auctex/font-latex" "auctex/font-latex.el"
-;;;;;;  (20700 41370))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/font-latex.el
 
 (autoload 'font-latex-setup "auctex/font-latex" "\
@@ -114,7 +114,7 @@ Setup this buffer for LaTeX font-lock.  Usually called from a hook.
 ;;;***
 
 ;;;### (autoloads (docTeX-mode TeX-latex-mode BibTeX-auto-store)
-;;;;;;  "auctex/latex" "auctex/latex.el" (20792 23588))
+;;;;;;  "auctex/latex" "auctex/latex.el" (20803 42188))
 ;;; Generated autoloads from auctex/latex.el
 
 (autoload 'BibTeX-auto-store "auctex/latex" "\
@@ -152,7 +152,7 @@ runs the hooks in `docTeX-mode-hook'.
 ;;;***
 
 ;;;### (autoloads (multi-prompt-key-value multi-prompt) "auctex/multi-prompt"
-;;;;;;  "auctex/multi-prompt.el" (20770 16651))
+;;;;;;  "auctex/multi-prompt.el" (20803 42189))
 ;;; Generated autoloads from auctex/multi-prompt.el
 
 (autoload 'multi-prompt "auctex/multi-prompt" "\
@@ -182,7 +182,7 @@ The return value is the string as entered in the minibuffer.
 ;;;***
 
 ;;;### (autoloads (ams-tex-mode TeX-plain-tex-mode) "auctex/plain-tex"
-;;;;;;  "auctex/plain-tex.el" (19707 64159))
+;;;;;;  "auctex/plain-tex.el" (20803 42189))
 ;;; Generated autoloads from auctex/plain-tex.el
 
 (autoload 'TeX-plain-tex-mode "auctex/plain-tex" "\
@@ -214,8 +214,8 @@ of `AmS-TeX-mode-hook'.
 ;;;***
 
 ;;;### (autoloads (preview-report-bug LaTeX-preview-setup preview-install-styles)
-;;;;;;  "auctex/preview/preview" "auctex/preview/preview.el" (20669
-;;;;;;  44510))
+;;;;;;  "auctex/preview/preview" "auctex/preview/preview.el" (20803
+;;;;;;  42189))
 ;;; Generated autoloads from auctex/preview/preview.el
 
 (autoload 'preview-install-styles "auctex/preview/preview" "\
@@ -248,7 +248,7 @@ Report a bug in the preview-latex package.
 
 ;;;### (autoloads (TeX-submit-bug-report TeX-auto-generate-global
 ;;;;;;  TeX-auto-generate TeX-tex-mode) "auctex/tex" "auctex/tex.el"
-;;;;;;  (20791 12567))
+;;;;;;  (20803 42188))
 ;;; Generated autoloads from auctex/tex.el
 
 (autoload 'TeX-tex-mode "auctex/tex" "\
@@ -290,7 +290,7 @@ information about your AUCTeX version and AUCTeX configuration.
 ;;;***
 
 ;;;### (autoloads (LaTeX-install-toolbar TeX-install-toolbar) "auctex/tex-bar"
-;;;;;;  "auctex/tex-bar.el" (20690 53662))
+;;;;;;  "auctex/tex-bar.el" (20803 42189))
 ;;; Generated autoloads from auctex/tex-bar.el
 
 (autoload 'TeX-install-toolbar "auctex/tex-bar" "\
@@ -305,8 +305,8 @@ Install toolbar buttons for LaTeX mode.
 
 ;;;***
 
-;;;### (autoloads nil "auctex/tex-fold" "auctex/tex-fold.el" (20669
-;;;;;;  44509))
+;;;### (autoloads nil "auctex/tex-fold" "auctex/tex-fold.el" (20803
+;;;;;;  42189))
 ;;; Generated autoloads from auctex/tex-fold.el
  (autoload 'TeX-fold-mode "tex-fold" "Minor mode for hiding and revealing macros and environments." t)
 
@@ -315,7 +315,7 @@ Install toolbar buttons for LaTeX mode.
 ;;;***
 
 ;;;### (autoloads (tex-font-setup) "auctex/tex-font" "auctex/tex-font.el"
-;;;;;;  (18341 54636))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/tex-font.el
 
 (autoload 'tex-font-setup "auctex/tex-font" "\
@@ -326,7 +326,7 @@ Setup font lock support for TeX.
 ;;;***
 
 ;;;### (autoloads (TeX-texinfo-mode) "auctex/tex-info" "auctex/tex-info.el"
-;;;;;;  (20659 23181))
+;;;;;;  (20803 42189))
 ;;; Generated autoloads from auctex/tex-info.el
 
 (defalias 'Texinfo-mode 'texinfo-mode)
@@ -345,7 +345,7 @@ value of `Texinfo-mode-hook'.
 ;;;***
 
 ;;;### (autoloads (japanese-latex-mode japanese-plain-tex-mode) "auctex/tex-jp"
-;;;;;;  "auctex/tex-jp.el" (20669 44509))
+;;;;;;  "auctex/tex-jp.el" (20803 42189))
 ;;; Generated autoloads from auctex/tex-jp.el
 
 (autoload 'japanese-plain-tex-mode "auctex/tex-jp" "\
@@ -363,7 +363,7 @@ Set `japanese-TeX-mode' to t, and enter `TeX-latex-mode'.
 ;;;***
 
 ;;;### (autoloads (texmathp-match-switch texmathp) "auctex/texmathp"
-;;;;;;  "auctex/texmathp.el" (20733 11542))
+;;;;;;  "auctex/texmathp.el" (20803 42189))
 ;;; Generated autoloads from auctex/texmathp.el
 
 (autoload 'texmathp "auctex/texmathp" "\
@@ -383,15 +383,15 @@ Limit searched to BOUND.
 
 ;;;***
 
-;;;### (autoloads nil "auctex/toolbar-x" "auctex/toolbar-x.el" (18580
-;;;;;;  49487))
+;;;### (autoloads nil "auctex/toolbar-x" "auctex/toolbar-x.el" (20803
+;;;;;;  42189))
 ;;; Generated autoloads from auctex/toolbar-x.el
  (autoload 'toolbarx-install-toolbar "toolbar-x")
 
 ;;;***
 
 ;;;### (autoloads (auto-complete) "auto-complete/auto-complete" "auto-complete/auto-complete.el"
-;;;;;;  (20803 38699))
+;;;;;;  (20803 42210))
 ;;; Generated autoloads from auto-complete/auto-complete.el
 
 (autoload 'auto-complete "auto-complete/auto-complete" "\
@@ -402,8 +402,8 @@ Start auto-completion at current point.
 ;;;***
 
 ;;;### (autoloads (buf-move-right buf-move-left buf-move-down buf-move-up)
-;;;;;;  "buffer-move/buffer-move" "buffer-move/buffer-move.el" (20803
-;;;;;;  39639))
+;;;;;;  "buffer-move/buffer-move" "buffer-move/buffer-move.el" (20804
+;;;;;;  12348))
 ;;; Generated autoloads from buffer-move/buffer-move.el
 
 (autoload 'buf-move-up "buffer-move/buffer-move" "\
@@ -437,7 +437,7 @@ one, an error is signaled.
 ;;;***
 
 ;;;### (autoloads (clojure-mode) "clojure-mode/clojure-mode" "clojure-mode/clojure-mode.el"
-;;;;;;  (20803 39533))
+;;;;;;  (20803 42220))
 ;;; Generated autoloads from clojure-mode/clojure-mode.el
 
 (autoload 'clojure-mode "clojure-mode/clojure-mode" "\
@@ -467,7 +467,7 @@ if that value is non-nil.
 ;;;***
 
 ;;;### (autoloads (clojure-test-mode) "clojure-mode/clojure-test-mode"
-;;;;;;  "clojure-mode/clojure-test-mode.el" (20803 39533))
+;;;;;;  "clojure-mode/clojure-test-mode.el" (20803 42220))
 ;;; Generated autoloads from clojure-mode/clojure-test-mode.el
 
 (autoload 'clojure-test-mode "clojure-mode/clojure-test-mode" "\
@@ -487,7 +487,7 @@ with a \"test.\" bit on it." (let ((ns (clojure-find-package))) (when (and ns (s
 
 ;;;### (autoloads (color-theme-solarized-light color-theme-solarized-dark
 ;;;;;;  color-theme-solarized) "color-theme-solarized/color-theme-solarized"
-;;;;;;  "color-theme-solarized/color-theme-solarized.el" (20803 39489))
+;;;;;;  "color-theme-solarized/color-theme-solarized.el" (20803 42218))
 ;;; Generated autoloads from color-theme-solarized/color-theme-solarized.el
 
 (autoload 'color-theme-solarized "color-theme-solarized/color-theme-solarized" "\
@@ -509,7 +509,7 @@ Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
 ;;;***
 
 ;;;### (autoloads nil "color-theme-solarized/solarized-definitions"
-;;;;;;  "color-theme-solarized/solarized-definitions.el" (20803 39489))
+;;;;;;  "color-theme-solarized/solarized-definitions.el" (20803 42218))
 ;;; Generated autoloads from color-theme-solarized/solarized-definitions.el
 
 (when (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
@@ -520,8 +520,8 @@ Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
 ;;;;;;  color-theme-compare color-theme-make-snapshot color-theme-analyze-defun
 ;;;;;;  color-theme-print color-theme-install-at-point-for-current-frame
 ;;;;;;  color-theme-install-at-mouse color-theme-describe color-theme-select)
-;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (17529
-;;;;;;  41105))
+;;;;;;  "color-theme/color-theme" "color-theme/color-theme.el" (20803
+;;;;;;  42207))
 ;;; Generated autoloads from color-theme/color-theme.el
 
 (autoload 'color-theme-select "color-theme/color-theme" "\
@@ -658,7 +658,7 @@ Initialize the color theme package by loading color-theme-libraries.
 
 ;;;### (autoloads (el-get-checksum el-get-make-recipes el-get-cd
 ;;;;;;  el-get-self-update el-get-update-all el-get-version) "el-get/el-get"
-;;;;;;  "el-get/el-get.el" (20803 38429))
+;;;;;;  "el-get/el-get.el" (20803 42189))
 ;;; Generated autoloads from el-get/el-get.el
 
 (autoload 'el-get-version "el-get/el-get" "\
@@ -695,7 +695,7 @@ Compute the checksum of the given package, and put it in the kill-ring
 ;;;***
 
 ;;;### (autoloads (el-get-list-packages) "el-get/el-get-list-packages"
-;;;;;;  "el-get/el-get-list-packages.el" (20803 38429))
+;;;;;;  "el-get/el-get-list-packages.el" (20803 42189))
 ;;; Generated autoloads from el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
@@ -707,7 +707,7 @@ Display a list of packages.
 
 ;;;### (autoloads (jedi:setup anything-jedi-related-names helm-jedi-related-names
 ;;;;;;  jedi:ac-setup jedi:complete jedi:start-dedicated-server)
-;;;;;;  "jedi/jedi" "jedi/jedi.el" (20803 38917))
+;;;;;;  "jedi/jedi" "jedi/jedi.el" (20804 12170))
 ;;; Generated autoloads from jedi/jedi.el
 
 (autoload 'jedi:start-dedicated-server "jedi/jedi" "\
@@ -762,7 +762,7 @@ what jedi can do.
 ;;;***
 
 ;;;### (autoloads (gfm-mode markdown-mode) "markdown-mode/markdown-mode"
-;;;;;;  "markdown-mode/markdown-mode.el" (20803 39489))
+;;;;;;  "markdown-mode/markdown-mode.el" (20803 42221))
 ;;; Generated autoloads from markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode/markdown-mode" "\
@@ -778,7 +778,7 @@ Major mode for editing GitHub Flavored Markdown files.
 ;;;***
 
 ;;;### (autoloads (paredit-mode) "paredit/paredit" "paredit/paredit.el"
-;;;;;;  (20803 39506))
+;;;;;;  (20804 12351))
 ;;; Generated autoloads from paredit/paredit.el
 
 (autoload 'paredit-mode "paredit/paredit" "\
@@ -791,6 +791,92 @@ Paredit behaves badly if parentheses are imbalanced, so exercise
 \\<paredit-mode-map>
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (global-rainbow-delimiters-mode rainbow-delimiters-mode-disable
+;;;;;;  rainbow-delimiters-mode-enable rainbow-delimiters-mode) "rainbow-delimiters/rainbow-delimiters"
+;;;;;;  "rainbow-delimiters/rainbow-delimiters.el" (20804 10562))
+;;; Generated autoloads from rainbow-delimiters/rainbow-delimiters.el
+
+(autoload 'rainbow-delimiters-mode "rainbow-delimiters/rainbow-delimiters" "\
+Highlight nested parentheses, brackets, and braces according to their depth.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'rainbow-delimiters-mode-enable "rainbow-delimiters/rainbow-delimiters" "\
+
+
+\(fn)" nil nil)
+
+(autoload 'rainbow-delimiters-mode-disable "rainbow-delimiters/rainbow-delimiters" "\
+
+
+\(fn)" nil nil)
+
+(defvar global-rainbow-delimiters-mode nil "\
+Non-nil if Global-Rainbow-Delimiters mode is enabled.
+See the command `global-rainbow-delimiters-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-rainbow-delimiters-mode'.")
+
+(custom-autoload 'global-rainbow-delimiters-mode "rainbow-delimiters/rainbow-delimiters" nil)
+
+(autoload 'global-rainbow-delimiters-mode "rainbow-delimiters/rainbow-delimiters" "\
+Toggle Rainbow-Delimiters mode in all buffers.
+With prefix ARG, enable Global-Rainbow-Delimiters mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Rainbow-Delimiters mode is enabled in all buffers where
+`rainbow-delimiters-mode-enable' would do it.
+See `rainbow-delimiters-mode' for more information on Rainbow-Delimiters mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (rainbow-mode) "rainbow-mode/rainbow-mode" "rainbow-mode/rainbow-mode.el"
+;;;;;;  (20804 10377))
+;;; Generated autoloads from rainbow-mode/rainbow-mode.el
+
+(autoload 'rainbow-mode "rainbow-mode/rainbow-mode" "\
+Colorize strings that represent colors.
+This will fontify with colors the string like \"#aabbcc\" or \"blue\".
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (color-theme-solarized-light color-theme-solarized-dark
+;;;;;;  color-theme-solarized) "solarized-theme/color-theme-solarized"
+;;;;;;  "solarized-theme/color-theme-solarized.el" (20803 43110))
+;;; Generated autoloads from solarized-theme/color-theme-solarized.el
+
+(autoload 'color-theme-solarized "solarized-theme/color-theme-solarized" "\
+Color theme by Ethan Schoonover, created 2011-03-24.
+Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
+
+\(fn MODE)" t nil)
+
+(autoload 'color-theme-solarized-dark "solarized-theme/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+(autoload 'color-theme-solarized-light "solarized-theme/color-theme-solarized" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "solarized-theme/solarized-definitions" "solarized-theme/solarized-definitions.el"
+;;;;;;  (20803 43110))
+;;; Generated autoloads from solarized-theme/solarized-definitions.el
+
+(when (boundp 'custom-theme-load-path) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
 
 ;;;***
 
@@ -812,7 +898,10 @@ Paredit behaves badly if parentheses are imbalanced, so exercise
 ;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "epc/epc.el"
 ;;;;;;  "epc/epcs.el" "epc/test-epc.el" "fuzzy/fuzzy.el" "ifind-mode/ifind-mode.el"
 ;;;;;;  "jedi/test-jedi.el" "jedi/tryout-jedi.el" "popup/popup.el"
-;;;;;;  "tiling/tiling.el") (20803 39712 368376))
+;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
+;;;;;;  "solarized-theme/color-theme-solarized-pkg.el" "solarized-theme/solarized-dark-theme.el"
+;;;;;;  "solarized-theme/solarized-light-theme.el") (20804 12419
+;;;;;;  401826))
 
 ;;;***
 

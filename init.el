@@ -9,20 +9,24 @@
 
 ;EL-GET
 (require 'el-get)
+(el-get 'sync)
+
+(require 'auto-complete)
+(global-auto-complete-mode t)
+
+;PYTHON
+(add-hook 'python-mode-hook 'jedi:setup)
+(add-hook 'python-mode-hook 'auto-complete-mode)
+(setq jedi:setup-keys t)
 
 ;MACROS
 (fset 'remove-spaces
    [?\M-m ?\C-  ?\C-e ?\M-x ?r ?e ?p ?l ?a ?c ?e ?- ?r ?e ?g ?e ?x ?p return ?\\ ?s ?- ?+ return ?  return ?\M-m])
 
 ;; ;AUCTEXT 
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
 (setq-default TeX-PDF-mode t)
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
-
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'slime-repl-mode))
 
 ;SLIME-AUTOCOMPLETE
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
@@ -217,6 +221,7 @@ Works in Microsoft Windows, Mac OS X, Linux."
  '(jabber-chat-buffer-show-avatar nil)
  '(jabber-message-alert-same-buffer nil)
  '(linum-eager t)
+ '(safe-local-variable-values (quote ((eval ignore-errors "Write-contents-functions is a buffer-local alternative to before-save-hook" (add-hook (quote write-contents-functions) (lambda nil (delete-trailing-whitespace) nil)) (require (quote whitespace)) "Sometimes the mode needs to be toggled off and on." (whitespace-mode 0) (whitespace-mode 1)) (whitespace-line-column . 80) (whitespace-style face trailing lines-tail) (require-final-newline . t))))
  '(show-paren-mode t)
  '(show-paren-style (quote parenthesis)))
 (put 'dired-find-alternate-file 'disabled nil)

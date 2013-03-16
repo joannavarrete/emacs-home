@@ -49,8 +49,8 @@ configure:1886: result: /usr/bin/install -c
 configure:1949: checking for /usr/bin/emacs
 configure:1979: result: /usr/bin/emacs
 configure:1995: checking if /usr/bin/emacs is XEmacs
-/usr/bin/emacs -batch -no-site-file -eval (let* ((x (if (featurep (quote xemacs)) "yes" "no"))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793"))
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+/usr/bin/emacs -batch -no-site-file -eval (let* ((x (if (featurep (quote xemacs)) "yes" "no"))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953"))
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => no
 configure:2015: result: no
 configure:2019: checking for Emacs prefix
@@ -61,21 +61,21 @@ configure:2019: checking for Emacs prefix
         (setq prefix parent)
       (if (string= (file-name-nondirectory parent) "bin")
          (setq prefix (directory-file-name (file-name-directory parent)))))
-    prefix) (error NONE)))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) /usr/bin/emacs
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+    prefix) (error NONE)))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) /usr/bin/emacs
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => /usr
 configure:2038: result: "/usr"
 configure:2068: checking if Emacs is recent enough
 /usr/bin/emacs -batch -no-site-file -eval (let* ((x (cond ((< emacs-major-version 21) "no")
 			 ((> emacs-major-version 21) "yes")
 			 ((< emacs-minor-version 01) "no")
-			 (t "yes")))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793"))
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+			 (t "yes")))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953"))
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => yes
 configure:2082: result: yes
 configure:2120: checking if build directory is valid
-/usr/bin/emacs -batch -eval (let* ((x (if (or (member (directory-file-name default-directory) load-path)	      (member (file-name-as-directory default-directory) load-path))	 "no" "yes"))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793"))
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+/usr/bin/emacs -batch -eval (let* ((x (if (or (member (directory-file-name default-directory) load-path)	      (member (file-name-as-directory default-directory) load-path))	 "no" "yes"))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953"))
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => yes
 configure:2136: result: yes
 configure:2226: checking where lisp files go
@@ -108,8 +108,8 @@ configure:2343: checking where the package lisp files go
               (t
 	       `(expand-file-name
                    ,(file-relative-name path startupdir)
-	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) `pwd`/auctex `pwd` `pwd`/preview-latex.el
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) `pwd`/auctex `pwd` `pwd`/preview-latex.el
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => (expand-file-name "auctex" (file-name-directory load-file-name))
 configure:2424: result: `pwd`/auctex
 configure:2427: checking where the data files go
@@ -138,8 +138,8 @@ configure:2427: checking where the data files go
               (t
 	       `(expand-file-name
                    ,(file-relative-name path startupdir)
-	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) `pwd`/auctex `pwd` `pwd`/preview-latex.el
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) `pwd`/auctex `pwd` `pwd`/preview-latex.el
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => (expand-file-name "auctex" (file-name-directory load-file-name))
 configure:2508: result: `pwd`/auctex
 configure:2515: checking for the location of AUCTeX's tex-site.el
@@ -147,8 +147,8 @@ configure:2564: result: ..
 configure:2575: checking for gs
 configure:2591: found /usr/bin/gs
 configure:2602: result: gs
-/usr/bin/emacs -batch -no-site-file -eval (let* ((dir(pop command-line-args-left))(x (if (member dir (list "NONE" (if (eq system-type 'windows-nt) "GSWIN32C.EXE" "gs"))) "" `(defvar preview-gs-command ,dir)))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) gs
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+/usr/bin/emacs -batch -no-site-file -eval (let* ((dir(pop command-line-args-left))(x (if (member dir (list "NONE" (if (eq system-type 'windows-nt) "GSWIN32C.EXE" "gs"))) "" `(defvar preview-gs-command ,dir)))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) gs
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => 
 configure:2630: checking for latex
 configure:2648: found /usr/bin/latex
@@ -183,8 +183,8 @@ configure:2757: result: /usr/bin/tex
               (t
 	       `(expand-file-name
                    ,(file-relative-name path startupdir)
-	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) `pwd`/auctex/latex `pwd` `pwd`/preview-latex.el
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+	           (file-name-directory load-file-name))))))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) `pwd`/auctex/latex `pwd` `pwd`/preview-latex.el
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => (expand-file-name "auctex/latex" (file-name-directory load-file-name))
 configure:3321: checking for glaring installation conflicts
 /usr/bin/emacs -batch -eval (let* ((packagelispdir(pop command-line-args-left)) (previewstartfile(pop command-line-args-left))(x 
@@ -198,8 +198,8 @@ configure:3321: checking for glaring installation conflicts
     (and (setq tmp (locate-library "preview-latex.el"))
          (not (string= (file-truename tmp)
                        (file-truename previewstartfile)))
-         (format "Conflicting previous startup file `%s' found!\n" tmp))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-4793")) `pwd`/auctex `pwd`/preview-latex.el
-Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-4793
+         (format "Conflicting previous startup file `%s' found!\n" tmp))))) (write-region (if (stringp x) x (prin1-to-string x)) nil "./conftest-8953")) `pwd`/auctex `pwd`/preview-latex.el
+Wrote /home/sorack/.emacs.d/el-get/auctex/preview/conftest-8953
 => Conflicting previous startup file `/usr/share/emacs/site-lisp/preview-latex.el' found!
 configure:3374: result: ouch!
 
