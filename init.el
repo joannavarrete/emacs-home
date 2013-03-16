@@ -14,6 +14,8 @@
 (require 'auto-complete)
 (global-auto-complete-mode t)
 
+(color-theme-solarized-dark)
+
 ;PYTHON
 (add-hook 'python-mode-hook 'jedi:setup)
 (add-hook 'python-mode-hook 'auto-complete-mode)
