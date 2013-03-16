@@ -22,7 +22,9 @@
 (add-hook 'prog-mode-hook (lambda ()
                        (auto-complete-mode)
                        (rainbow-mode)
-                       (rainbow-delimiters-mode)))
+                       (rainbow-delimiters-mode)
+                       (my-keys-minor-mode)
+                       (linum-mode)))
 
 ;PYTHON
 (add-hook 'python-mode-hook (lambda () 

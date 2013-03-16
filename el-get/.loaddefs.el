@@ -401,6 +401,38 @@ Start auto-completion at current point.
 
 ;;;***
 
+;;;### (autoloads (autopair-global-mode autopair-mode) "autopair/autopair"
+;;;;;;  "autopair/autopair.el" (20804 15597))
+;;; Generated autoloads from autopair/autopair.el
+
+(autoload 'autopair-mode "autopair/autopair" "\
+Automagically pair braces and quotes like in TextMate.
+
+\(fn &optional ARG)" t nil)
+
+(defvar autopair-global-mode nil "\
+Non-nil if Autopair-Global mode is enabled.
+See the command `autopair-global-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `autopair-global-mode'.")
+
+(custom-autoload 'autopair-global-mode "autopair/autopair" nil)
+
+(autoload 'autopair-global-mode "autopair/autopair" "\
+Toggle Autopair mode in all buffers.
+With prefix ARG, enable Autopair-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Autopair mode is enabled in all buffers where
+`autopair-on' would do it.
+See `autopair-mode' for more information on Autopair mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
 ;;;### (autoloads (buf-move-right buf-move-left buf-move-down buf-move-up)
 ;;;;;;  "buffer-move/buffer-move" "buffer-move/buffer-move.el" (20804
 ;;;;;;  12348))
@@ -886,13 +918,13 @@ Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
 ;;;;;;  "auctex/preview/prv-xemacs.el" "auctex/tex-buf.el" "auctex/tex-mik.el"
 ;;;;;;  "auctex/tex-site.el" "auctex/tex-style.el" "auctex/tex-wizard.el"
 ;;;;;;  "auto-complete-latex/auto-complete-latex.el" "auto-complete/auto-complete-config.el"
-;;;;;;  "auto-complete/auto-complete-pkg.el" "color-theme-solarized/color-theme-solarized-pkg.el"
-;;;;;;  "color-theme-solarized/solarized-dark-theme.el" "color-theme-solarized/solarized-light-theme.el"
-;;;;;;  "color-theme/color-theme-autoloads.el" "ctable/ctable.el"
-;;;;;;  "ctable/test-ctable.el" "deferred/concurrent-sample.el" "deferred/concurrent.el"
-;;;;;;  "deferred/deferred-samples.el" "deferred/deferred.el" "deferred/test-concurrent.el"
-;;;;;;  "deferred/test-deferred.el" "el-get/el-get-autoloads.el"
-;;;;;;  "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
+;;;;;;  "auto-complete/auto-complete-pkg.el" "autopair/autopair-tests.el"
+;;;;;;  "color-theme-solarized/color-theme-solarized-pkg.el" "color-theme-solarized/solarized-dark-theme.el"
+;;;;;;  "color-theme-solarized/solarized-light-theme.el" "color-theme/color-theme-autoloads.el"
+;;;;;;  "ctable/ctable.el" "ctable/test-ctable.el" "deferred/concurrent-sample.el"
+;;;;;;  "deferred/concurrent.el" "deferred/deferred-samples.el" "deferred/deferred.el"
+;;;;;;  "deferred/test-concurrent.el" "deferred/test-deferred.el"
+;;;;;;  "el-get/el-get-autoloads.el" "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
 ;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
 ;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
 ;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "epc/epc.el"
@@ -900,8 +932,8 @@ Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
 ;;;;;;  "jedi/test-jedi.el" "jedi/tryout-jedi.el" "popup/popup.el"
 ;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
 ;;;;;;  "solarized-theme/color-theme-solarized-pkg.el" "solarized-theme/solarized-dark-theme.el"
-;;;;;;  "solarized-theme/solarized-light-theme.el") (20804 12419
-;;;;;;  401826))
+;;;;;;  "solarized-theme/solarized-light-theme.el") (20804 15599
+;;;;;;  212119))
 
 ;;;***
 

@@ -15,6 +15,8 @@
                        (popup fuzzy)))
  (auto-complete-latex status "installed" recipe
                       (:name auto-complete-latex :description "A LaTeX extention for auto-complete-mode" :website "https://bitbucket.org/tequilasunset/auto-complete-latex" :url "https://bitbucket.org/tequilasunset/auto-complete-latex" :type hg :depends auto-complete))
+ (autopair status "installed" recipe
+           (:name autopair :website "https://github.com/capitaomorte/autopair" :description "Autopair is an extension to the Emacs text editor that automatically pairs braces and quotes." :type github :pkgname "capitaomorte/autopair" :features autopair))
  (buffer-move status "installed" recipe
               (:name buffer-move :description "Swap buffers without typing C-x b on each window" :type emacswiki :features buffer-move))
  (clojure-mode status "installed" recipe
