@@ -929,11 +929,11 @@ Ported to Emacs by Greg Pfeil, http://ethanschoonover.com/solarized.
 ;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
 ;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "epc/epc.el"
 ;;;;;;  "epc/epcs.el" "epc/test-epc.el" "fuzzy/fuzzy.el" "ifind-mode/ifind-mode.el"
-;;;;;;  "jedi/test-jedi.el" "jedi/tryout-jedi.el" "popup/popup.el"
-;;;;;;  "rainbow-mode/rainbow-mode-autoloads.el" "rainbow-mode/rainbow-mode-pkg.el"
-;;;;;;  "solarized-theme/color-theme-solarized-pkg.el" "solarized-theme/solarized-dark-theme.el"
-;;;;;;  "solarized-theme/solarized-light-theme.el") (20804 15599
-;;;;;;  212119))
+;;;;;;  "ipython/ipython.el" "jedi/test-jedi.el" "jedi/tryout-jedi.el"
+;;;;;;  "popup/popup.el" "python-mode/python-mode.el" "rainbow-mode/rainbow-mode-autoloads.el"
+;;;;;;  "rainbow-mode/rainbow-mode-pkg.el" "solarized-theme/color-theme-solarized-pkg.el"
+;;;;;;  "solarized-theme/solarized-dark-theme.el" "solarized-theme/solarized-light-theme.el")
+;;;;;;  (20806 17627 961203))
 
 ;;;***
 

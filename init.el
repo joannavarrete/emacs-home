@@ -1,11 +1,29 @@
-(add-to-list 'load-path "~/.emacs.d/")
+
+(add-to-list 'load-path "~/.emacs.d/")  ;
 (add-to-list 'load-path "~/.emacs.d/slime")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(require 'iso-transl)
+(set-keyboard-coding-system 'utf-8) 
 
 ;NO DISTRACTIONS
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+
+;MAX LINES
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
+(setq-default fill-column 80)
+
+;SELECTION
+(setq x-select-enable-clipboard t)
+(delete-selection-mode 1)
+
+; INDENTATION
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 ;EL-GET
 (require 'el-get)
@@ -13,8 +31,8 @@
 
 (require 'auto-complete)
 (global-auto-complete-mode t)
-(add-to-list 'ac-modes 'latex-mode)
 
+;THEME
 (color-theme-solarized-dark)
 
 (defun turn-on-paredit () (paredit-mode 1))
@@ -27,9 +45,24 @@
                        (linum-mode)))
 
 ;PYTHON
+(defun annotate-pdb ()
+  (interactive)
+  (highlight-lines-matching-regexp "import pdb")
+  (highlight-lines-matching-regexp "pdb.set_trace()"))
+
 (add-hook 'python-mode-hook (lambda () 
                               (jedi:setup)
-                              (autopair-mode)))
+                              (autopair-mode)
+                              (annotate-pdb)))
+
+(defun python-add-breakpoint ()
+  (interactive)
+  (py-newline-and-indent)
+  (insert "import ipdb; ipdb.set_trace()")
+  (highlight-lines-matching-regexp "^[ ]*import ipdb; ipdb.set_trace()"))
+
+(define-key python-mode-map (kbd "C-c SPC") 'python-add-breakpoint)
+(define-key python-mode-map (kbd "C-c C-c") #'py-execute-buffer-python3)
 
 ;JEDI
 (setq jedi:setup-keys t)
@@ -55,14 +88,13 @@
 (require 'slime)
 (slime-setup '(slime-fancy)) ; 
 
-;SELECTION
-(setq x-select-enable-clipboard t)
-(delete-selection-mode 1)
-
 ;MARKDOWN
 (add-hook 'markdown-mode-hook
           (lambda ()
-            (flyspell-mode)))
+            (flyspell-mode)
+            (autopair-mode)
+            (auto-fill-mode)))
+
 
 ;DIRED
 ;same buffer
@@ -114,17 +146,13 @@ Works in Microsoft Windows, Mac OS X, Linux."
 (setq ido-file-extensions-order '(".java" ".js"))
 (setq ido-ignore-extensions t)
 
-
-;BUFFER MOVE, TILING, WINDOWS
 (defun cycle-windows()
-  (interactive)
   "cycle the buffer of the windows in cyclic ordering"
+  (interactive)
   (mapcar  (lambda(window)
                   (let ((next-window-buffer (window-buffer (next-window window 0))))
-                    (progn 
                       (set-window-buffer (next-window window 0) (window-buffer window))
-                      (set-window-buffer window next-window-buffer)))) (butlast (window-list nil 0))))
-
+                      (set-window-buffer window next-window-buffer))) (butlast (window-list nil 0))))
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
 (define-key my-keys-minor-mode-map (kbd "C-c C-w") 'cycle-windows)
@@ -203,10 +231,6 @@ Works in Microsoft Windows, Mac OS X, Linux."
 (setq recentf-max-saved-items 50)
 
 (setq enable-recursive-minibuffers t)
-
-; INDENTATION
-(setq-default tab-width 4)
-(setq-default indent-tabs-mode nil)
 
 ;BROWSER
 (setq browse-url-browser-function 'browse-url-generic
